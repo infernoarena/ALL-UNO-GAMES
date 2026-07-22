@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "AllUnoGames"
+version = "1.0.0"
+id = "artifacts/allunogames"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22272
+
+[services.development]
+run = "pnpm --filter @workspace/allunogames run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/allunogames", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/allunogames/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22272"
+BASE_PATH = "/"
