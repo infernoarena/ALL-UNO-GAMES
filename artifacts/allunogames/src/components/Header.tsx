@@ -23,7 +23,7 @@ export function Header() {
           <div className="flex items-center gap-2">
             <img src={logoImg} alt="AllUnoGames Logo" className="w-9 h-9 rounded-full object-cover" />
             <span className="font-gaming text-xl font-bold tracking-wider text-gray-800">
-              ALL<span className="text-primary">YONO</span>GAMES
+              ALL<span className="text-primary">UONO</span>GAMES
             </span>
           </div>
 

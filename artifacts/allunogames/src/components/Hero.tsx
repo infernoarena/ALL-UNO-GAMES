@@ -31,12 +31,12 @@ export function Hero() {
             <div className="flex items-center gap-4">
               <div className="relative">
                 <div className="absolute inset-0 rounded-full blur-md opacity-60" style={{ background: 'radial-gradient(circle, rgba(255,200,0,0.5), transparent)' }} />
-                <img src={logoImg} alt="AllYonoGames" className="relative w-16 h-16 rounded-full object-cover border-2 border-yellow-400 shadow-lg" />
+                <img src={logoImg} alt="AllUonoGames" className="relative w-16 h-16 rounded-full object-cover border-2 border-yellow-400 shadow-lg" />
               </div>
               <div>
                 <div className="text-yellow-400 text-xs font-bold tracking-[0.3em] uppercase mb-1">Play • Win • Earn</div>
                 <div className="text-white text-2xl font-black font-gaming tracking-widest leading-none">
-                  ALL<span style={{ color: '#FFD700' }}>YONO</span>GAMES
+                  ALL<span style={{ color: '#FFD700' }}>UONO</span>GAMES
                 </div>
               </div>
             </div>
@@ -54,7 +54,7 @@ export function Hero() {
                     textShadow: '0 0 20px rgba(255,215,0,0.6), 2px 2px 0px rgba(0,0,0,0.5)',
                     WebkitTextStroke: '1px rgba(255,180,0,0.5)'
                   }}>
-                  YONO
+                  UONO
                 </span>
                 <span className="block text-white text-5xl sm:text-6xl lg:text-7xl tracking-wide"
                   style={{ textShadow: '2px 2px 0px rgba(0,0,0,0.5)' }}>
@@ -110,7 +110,7 @@ export function Hero() {
               <div className="w-full h-full pt-10 pb-5 px-4 flex flex-col gap-3" style={{ background: 'linear-gradient(180deg, #0d1b5e 0%, #0a1540 100%)' }}>
                 {/* Header */}
                 <div className="flex items-center justify-between">
-                  <span className="font-gaming font-black text-sm text-white">ALL<span style={{ color: '#FFD700' }}>YONO</span>GAMES</span>
+                  <span className="font-gaming font-black text-sm text-white">ALL<span style={{ color: '#FFD700' }}>UONO</span>GAMES</span>
                   <span className="text-yellow-400 text-xs">≡</span>
                 </div>
 

@@ -11,11 +11,11 @@ export function Footer() {
           <img src={logoImg} alt="AllUnoGames" className="w-16 h-16 rounded-full object-cover mb-3 shadow-sm border-2 border-green-100" />
 
           <span className="font-gaming text-xl font-bold tracking-wider text-gray-800 mb-4">
-            ALL<span className="text-primary">YONO</span>GAMES
+            ALL<span className="text-primary">UONO</span>GAMES
           </span>
 
           <p className="text-gray-500 mb-6 max-w-md text-sm">
-            AllYonoGames.site &mdash; India's Best Yono App Store. Find the most trusted and high-paying apps in one place.
+            AllUonoGames.site &mdash; India's Best Yono App Store. Find the most trusted and high-paying apps in one place.
           </p>
 
           <a
@@ -29,7 +29,7 @@ export function Footer() {
           </a>
 
           <div className="w-full border-t border-gray-100 pt-5 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-400 uppercase tracking-widest font-bold">
-            <p>&copy; {new Date().getFullYear()} ALLYONOGAMES.SITE. ALL RIGHTS RESERVED.</p>
+            <p>&copy; {new Date().getFullYear()} ALLUONOGAMES.SITE. ALL RIGHTS RESERVED.</p>
             <p className="text-gray-400 font-medium">For entertainment purposes. Play responsibly.</p>
           </div>
         </div>
