@@ -52,52 +52,55 @@
 }
 
 :root {
-  --background: 231 82% 7%; /* Very deep navy */
-  --foreground: 0 0% 100%;
-  
-  --card: 231 82% 12%; 
-  --card-foreground: 0 0% 100%;
-  --card-border: 231 60% 25%;
-  
-  --popover: 231 82% 12%;
-  --popover-foreground: 0 0% 100%;
-  --popover-border: 231 60% 25%;
-  
-  --primary: 47 100% 50%; /* Vibrant Gold/Yellow */
-  --primary-foreground: 231 82% 7%;
-  
-  --secondary: 231 60% 20%; 
-  --secondary-foreground: 0 0% 100%;
-  
-  --muted: 231 50% 15%;
-  --muted-foreground: 231 20% 70%;
-  
-  --accent: 47 100% 50%;
-  --accent-foreground: 231 82% 7%;
-  
+  /* === PREMIUM WHITE THEME === */
+  --background: 0 0% 98%;          /* Near-white #FAFAFA */
+  --foreground: 224 71% 10%;       /* Deep navy text */
+
+  --card: 0 0% 100%;               /* Pure white cards */
+  --card-foreground: 224 71% 10%;
+  --card-border: 220 14% 90%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 224 71% 10%;
+  --popover-border: 220 14% 90%;
+
+  --primary: 142 72% 29%;          /* Rich green matching logo */
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 220 14% 95%;
+  --secondary-foreground: 224 71% 20%;
+
+  --muted: 220 14% 95%;
+  --muted-foreground: 220 9% 46%;
+
+  --accent: 142 72% 29%;
+  --accent-foreground: 0 0% 100%;
+
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
-  
-  --border: 231 60% 20%;
-  --input: 231 60% 20%;
-  --ring: 47 100% 50%;
-  
+
+  --border: 220 14% 90%;
+  --input: 220 14% 90%;
+  --ring: 142 72% 29%;
+
   --app-font-sans: 'Outfit', sans-serif;
   --app-font-gaming: 'Rajdhani', sans-serif;
   --app-font-serif: Georgia, serif;
   --app-font-mono: Menlo, monospace;
-  
+
   --radius: 0.75rem;
 
-  --button-outline: rgba(255, 255, 255, 0.1);
-  --badge-outline: rgba(255, 255, 255, 0.05);
+  --button-outline: rgba(0, 0, 0, 0.08);
+  --badge-outline: rgba(0, 0, 0, 0.04);
   --opaque-button-border-intensity: -8;
-  --elevate-1: rgba(255, 255, 255, 0.05);
-  --elevate-2: rgba(255, 255, 255, 0.1);
-}
+  --elevate-1: rgba(0, 0, 0, 0.03);
+  --elevate-2: rgba(0, 0, 0, 0.07);
 
-.dark {
-  /* Enforce dark mode as default */
+  --primary-border: hsl(142 72% 22%);
+  --secondary-border: hsl(220 14% 88%);
+  --muted-border: hsl(220 14% 88%);
+  --accent-border: hsl(142 72% 22%);
+  --destructive-border: hsl(0 84% 52%);
 }
 
 @layer base {
@@ -108,27 +111,33 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-gaming uppercase tracking-wide;
+    @apply font-gaming tracking-wide;
   }
 }
 
 @layer utilities {
   .bg-gold-gradient {
-    background: linear-gradient(135deg, #FFDF00 0%, #D4AF37 100%);
+    background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
   }
-  .bg-dark-gradient {
-    background: linear-gradient(180deg, #0a1563 0%, #060d3b 100%);
+  .bg-hero-gradient {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #f0fdf4 100%);
   }
   .text-gold-gradient {
-    background: linear-gradient(135deg, #FFF380 0%, #FFD700 50%, #B8860B 100%);
+    background: linear-gradient(135deg, #15803d 0%, #22c55e 50%, #16a34a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   .gold-shadow {
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(22, 163, 74, 0.25);
   }
   .hover-gold-shadow:hover {
-    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+    box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
+  }
+  .card-shadow {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.06);
+  }
+  .card-shadow-hover:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10), 0 8px 24px rgba(0,0,0,0.08);
   }
 }
