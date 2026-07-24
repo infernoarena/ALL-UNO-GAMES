@@ -11,7 +11,7 @@ function AnnouncementBar() {
   return (
     <div className="w-full bg-primary text-white font-bold text-center py-2 px-4 text-sm tracking-wide shadow-sm z-50 relative flex items-center justify-center gap-2 uppercase">
       <Gamepad2 className="w-4 h-4" />
-      Welcome to AllUnoGames.site &mdash; India's Best Yono App Store!
+      Welcome to AllYonoGames.site &mdash; India's Best Yono App Store!
       <Gamepad2 className="w-4 h-4" />
     </div>
   );
