@@ -121,9 +121,17 @@ export function AllApps() {
                   className="bg-white border border-gray-200 rounded-2xl p-4 flex flex-col card-shadow card-shadow-hover transition-all duration-200"
                 >
                   <div className="flex items-start gap-3 mb-3">
-                    <div className={`w-14 h-14 shrink-0 ${getAppColor(app.name)} rounded-xl flex items-center justify-center text-white text-xl font-black font-gaming shadow-sm`}>
-                      {getAppInitials(app.name)}
-                    </div>
+                    {(app as any).icon ? (
+                      <img
+                        src={(app as any).icon}
+                        alt={app.name}
+                        className="w-14 h-14 shrink-0 rounded-xl object-cover shadow-sm"
+                      />
+                    ) : (
+                      <div className={`w-14 h-14 shrink-0 ${getAppColor(app.name)} rounded-xl flex items-center justify-center text-white text-xl font-black font-gaming shadow-sm`}>
+                        {getAppInitials(app.name)}
+                      </div>
+                    )}
 
                     <div className="flex-1 min-w-0 pt-1">
                       <h3 className="text-base font-bold text-gray-900 truncate" title={app.name}>
