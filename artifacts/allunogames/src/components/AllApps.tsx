@@ -125,7 +125,7 @@ export function AllApps() {
                       <img
                         src={(app as any).icon}
                         alt={app.name}
-                        className="w-14 h-14 shrink-0 rounded-xl object-cover shadow-sm"
+                        className="w-14 h-14 shrink-0 rounded-xl object-contain shadow-sm bg-white"
                       />
                     ) : (
                       <div className={`w-14 h-14 shrink-0 ${getAppColor(app.name)} rounded-xl flex items-center justify-center text-white text-xl font-black font-gaming shadow-sm`}>

@@ -10,6 +10,7 @@ export function FeaturedApps() {
       bonus: '₹100-480',
       minW: '₹100',
       link: 'https://www.rumblerummy333.com/?code=UC0XC4EQBJZ&t=1781441719',
+      icon: '/icons/rumble-rummy.jpg',
     },
     {
       rank: 2,
@@ -24,6 +25,7 @@ export function FeaturedApps() {
       bonus: '₹625',
       minW: '₹100',
       link: 'https://www.rummy91p.bet/?code=4KTF26ZVDZX&t=1781435523',
+      icon: '/icons/rummy-91.png',
     },
   ];
 
@@ -56,9 +58,17 @@ export function FeaturedApps() {
               </span>
 
               <div className="flex items-start gap-3 mb-3 mt-1 pt-2">
-                <div className={`w-14 h-14 shrink-0 ${getAppColor(app.name)} rounded-xl flex items-center justify-center text-white text-xl font-black font-gaming shadow-sm`}>
-                  {getAppInitials(app.name)}
-                </div>
+                {(app as any).icon ? (
+                  <img
+                    src={(app as any).icon}
+                    alt={app.name}
+                    className="w-14 h-14 shrink-0 rounded-xl object-contain shadow-sm bg-white"
+                  />
+                ) : (
+                  <div className={`w-14 h-14 shrink-0 ${getAppColor(app.name)} rounded-xl flex items-center justify-center text-white text-xl font-black font-gaming shadow-sm`}>
+                    {getAppInitials(app.name)}
+                  </div>
+                )}
                 <div className="flex-1 min-w-0 pt-1">
                   <h3 className="text-base font-bold text-gray-900 truncate">{app.name}</h3>
                   <span className="inline-block bg-blue-50 text-blue-600 border border-blue-100 text-[10px] font-bold px-1.5 py-0.5 rounded uppercase mt-1">
