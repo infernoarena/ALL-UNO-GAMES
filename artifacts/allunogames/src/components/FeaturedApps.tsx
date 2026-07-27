@@ -6,6 +6,14 @@ export function FeaturedApps() {
   const featured = [
     {
       rank: 1,
+      name: 'Boss-Rummy',
+      bonus: '₹200-500',
+      minW: '₹100',
+      link: 'https://www.bossrummye.com/?code=9HFZC6V163M&t=1781437008',
+      icon: '/icons/boss-rummy.jpg',
+    },
+    {
+      rank: 2,
       name: 'Rumble-Rummy',
       bonus: '₹100-480',
       minW: '₹100',
@@ -13,19 +21,12 @@ export function FeaturedApps() {
       icon: '/icons/rumble-rummy.jpg',
     },
     {
-      rank: 2,
-      name: 'Max-Rummy',
-      bonus: '₹51',
-      minW: '₹100',
-      link: 'https://www.maxrummy11.com/?code=QUMQKC1ZGA1&t=1783565833',
-    },
-    {
       rank: 3,
       name: 'Rummy-91',
       bonus: '₹625',
       minW: '₹100',
       link: 'https://www.rummy91p.bet/?code=4KTF26ZVDZX&t=1781435523',
-      icon: '/icons/rummy-91.png',
+      icon: '/icons/rummy-91.jpg',
     },
   ];
 
