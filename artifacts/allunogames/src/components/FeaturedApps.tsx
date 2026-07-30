@@ -9,7 +9,7 @@ export function FeaturedApps() {
       name: 'Boss-Rummy',
       bonus: '₹200-500',
       minW: '₹100',
-      link: 'https://www.bossrummye.com/?code=9HFZC6V163M&t=1781437008',
+      link: 'https://www.bossrummymm.com/?code=3537JNW5R2W&t=1785309720',
       icon: '/icons/boss-rummy.jpg',
     },
     {
